@@ -1,0 +1,16 @@
+<section class="overflow-hidden text-gray-700 ">
+  <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+    <div class="flex flex-wrap -m-1 md:-m-2">
+    <% @rooms.each do |room| %>
+      <div class="flex flex-wrap w-1/2">
+        <div class="w-full max-w-3xl p-4 md:p-4">
+          <%= image_tag room.default_image, class: "object-cover object-center w-full h-48 rounded-lg" %>
+          <p class="p-2 mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none"><%= room.name %></p>
+          <p class="p-2 block text-sm font-medium text-gray-500 pointer-events-none"><%= room.description %></p>
+          <p class="p-2 block text-sm font-medium text-gray-500 pointer-events-none"><%=humanized_money_with_symbol(room.price) %> per night</p>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</section>
