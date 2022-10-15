@@ -1,0 +1,7 @@
+<div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8">
+  <% flash.each do |flash_type, message| %>
+    <div id="toast-success" class="flex items-center p-4 mb-4 w-full text-black-500 bg-white rounded-lg shadow dark:text-black-400 dark:bg-black-800" role="alert">
+      <div class="ml-3 text-sm text-center font-normal"><%= message %></div>
+    </div>
+  <% end %>
+</div>
