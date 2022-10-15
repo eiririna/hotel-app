@@ -4,7 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :reviews, as: :reviewable
   has_many :reservations, dependent: :destroy
   has_many :reserved_rooms, through: :reservations, source: :room
   has_many :reviews, dependent: :destroy

@@ -9,7 +9,10 @@ Rails.application.routes.draw do
     get '/users_by_email' => 'users_by_emails#show', as: :users_by_email, format: :json
   end
 
-  resources :rooms
+  resources :rooms do
+    resources :reservations, controller: "rooms/reservations"
+  end
+
   resources :reviews
 
 end

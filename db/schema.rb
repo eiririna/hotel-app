@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_13_193447) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_15_224651) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -45,10 +45,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_13_193447) do
   create_table "reservations", force: :cascade do |t|
     t.bigint "room_id", null: false
     t.bigint "user_id", null: false
-    t.date "reservation_date"
-    t.date "{:null=>false}"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "check_in_date", null: false
+    t.date "check_out_date", null: false
     t.index ["room_id"], name: "index_reservations_on_room_id"
     t.index ["user_id"], name: "index_reservations_on_user_id"
   end
@@ -57,12 +57,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_13_193447) do
     t.string "title"
     t.text "body"
     t.integer "rating"
-    t.bigint "reviewable_id"
-    t.string "reviewable_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
-    t.index ["reviewable_id", "reviewable_type"], name: "index_reviews_on_reviewable_id_and_reviewable_type"
+    t.boolean "published", default: false
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
@@ -85,6 +83,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_13_193447) do
     t.datetime "updated_at", null: false
     t.string "first_name"
     t.string "last_name"
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

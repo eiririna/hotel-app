@@ -10,6 +10,14 @@
           <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email address", class: "w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" %>
         </div>
         <div class="mt-4">
+          <%= f.label :first_name, "First name", class: "block"%>
+          <%= f.text_field :first_name, placeholder: "Irina", class: "w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" %>
+        </div>
+        <div class="mt-4">
+          <%= f.label :last_name, "Last name", class: "block"%>
+          <%= f.text_field :last_name, placeholder: "Egorova", class: "w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" %>
+        </div>
+        <div class="mt-4">
           <%= f.label :password, class: "block", placeholder: "Password"%>
           <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password", class: "w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" %>
         </div>

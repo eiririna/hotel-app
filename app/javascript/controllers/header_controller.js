@@ -15,7 +15,7 @@ export default class extends Controller {
     });
   }
 
-  toggleDropdownMenu(){
-    toggle(document.getElementById('dropdownNavbar'));
-  }
+  // toggleDropdownMenu(){
+  //   toggle(document.getElementById('dropdownNavbar'));
+  // }
 }

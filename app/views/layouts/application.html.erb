@@ -13,7 +13,9 @@
   </head>
 
   <body>
-    <%= render "layouts/header" %>
-    <%= yield %>
+  <%= render "layouts/header" %>
+  <%= render 'shared/flash' %>
+
+  <%= yield %>
   </body>
 </html>
