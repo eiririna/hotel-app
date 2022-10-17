@@ -1,21 +1,13 @@
 import { Controller } from "@hotwired/stimulus"
-import {enter, leave, toggle} from "el-transition"
 
 export default class extends Controller {
   static targets = ['openUserMenu', 'userAuthLink'];
   connect() {
-/*
-    this.openUserMenuTarget.addEventListener('click', this.toggleDropdownMenu)
-*/
-
+    console.log('hi! i am header controller!')
     this.userAuthLinkTargets.forEach((link) => {
       link.addEventListener('click', () => {
         document.getElementById('modal-trigger').click();
       });
     });
   }
-
-  // toggleDropdownMenu(){
-  //   toggle(document.getElementById('dropdownNavbar'));
-  // }
 }

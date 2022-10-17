@@ -18,7 +18,7 @@ export default class extends Controller {
                         'ACCEPT': "application/json"
                     }
                 }).then((response) => {
-                    Turbo.visit('/users/sign_in');
+                    Turbo.visit('users/sign_in');
                 }).catch((response) => {
                     Turbo.visit('users/sign_up');
                 })

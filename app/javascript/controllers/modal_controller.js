@@ -5,6 +5,7 @@ export default class extends Controller {
     static targets = ['closeButton'];
 
     connect() {
+        console.log("Hello, Stimulus!", this.element)
         document.getElementById('authentication-modal').addEventListener('click', this.closeModal);
         this.closeButtonTarget.addEventListener('click', () => {
             leave(document.getElementById('authentication-modal'));

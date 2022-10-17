@@ -11,6 +11,8 @@
     "axios": "^1.1.2",
     "el-transition": "^0.0.7",
     "flowbite": "^1.5.3",
-    "stimulus-carousel": "^4.0.0"
+    "stimulus-carousel": "^4.0.0",
+    "swiper": "^6.8.4",
+    "vue-awesome-swiper": "^3.1.3"
   }
 }
