@@ -50,6 +50,39 @@
   "resolved" "https://registry.npmjs.org/el-transition/-/el-transition-0.0.7.tgz"
   "version" "0.0.7"
 
+"esbuild-linux-64@0.15.11":
+  "integrity" "sha512-Y2Rh+PcyVhQqXKBTacPCltINN3uIw2xC+dsvLANJ1SpK5NJUtxv8+rqWpjmBgaNWKQT1/uGpMmA9olALy9PLVA=="
+  "resolved" "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.15.11.tgz"
+  "version" "0.15.11"
+
+"esbuild@^0.15.11":
+  "integrity" "sha512-OgHGuhlfZ//mToxjte1D5iiiQgWfJ2GByVMwEC/IuoXsBGkuyK1+KrjYu0laSpnN/L1UmLUCv0s25vObdc1bVg=="
+  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.15.11.tgz"
+  "version" "0.15.11"
+  optionalDependencies:
+    "@esbuild/android-arm" "0.15.11"
+    "@esbuild/linux-loong64" "0.15.11"
+    "esbuild-android-64" "0.15.11"
+    "esbuild-android-arm64" "0.15.11"
+    "esbuild-darwin-64" "0.15.11"
+    "esbuild-darwin-arm64" "0.15.11"
+    "esbuild-freebsd-64" "0.15.11"
+    "esbuild-freebsd-arm64" "0.15.11"
+    "esbuild-linux-32" "0.15.11"
+    "esbuild-linux-64" "0.15.11"
+    "esbuild-linux-arm" "0.15.11"
+    "esbuild-linux-arm64" "0.15.11"
+    "esbuild-linux-mips64le" "0.15.11"
+    "esbuild-linux-ppc64le" "0.15.11"
+    "esbuild-linux-riscv64" "0.15.11"
+    "esbuild-linux-s390x" "0.15.11"
+    "esbuild-netbsd-64" "0.15.11"
+    "esbuild-openbsd-64" "0.15.11"
+    "esbuild-sunos-64" "0.15.11"
+    "esbuild-windows-32" "0.15.11"
+    "esbuild-windows-64" "0.15.11"
+    "esbuild-windows-arm64" "0.15.11"
+
 "flowbite@^1.5.3":
   "integrity" "sha512-e2OHfndxTHtGMqcPqvqwg3gGLg57hmIDVgE/BazMDccgirQ0JEtirKnbZZ4WSOIEhNDgO9pJZuyC8rRlcMm6pQ=="
   "resolved" "https://registry.npmjs.org/flowbite/-/flowbite-1.5.3.tgz"
