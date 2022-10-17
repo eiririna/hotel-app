@@ -6,7 +6,9 @@
           <a class="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
             <%= link_to room_path(room) do %>
               <div class="relative pb-48 overflow-hidden">
-                <%= image_tag room.default_image, class: "absolute inset-0 h-full w-full object-cover" %>
+                <% if room.images.attached? %>
+                  <%= image_tag room.default_image, class: "absolute inset-0 h-full w-full object-cover" %>
+                <% end %>
               </div>
               <div class="p-4">
                 <h2 class="mt-2 mb-2  font-bold"><%= room.name %></h2>

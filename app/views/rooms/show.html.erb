@@ -7,7 +7,9 @@
 
     <!-- Image gallery -->
     <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8">
-      <%= image_tag @room.default_image, class: "w-full h-full object-center object-cover"%>
+      <% if @room.images.attached? %>
+       <%= image_tag @room.default_image, class: "w-full h-full object-center object-cover"%>
+      <% end %>
     </div>
 
     <!-- Product info -->

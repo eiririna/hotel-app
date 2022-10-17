@@ -2,6 +2,12 @@
 
 Rails.application.routes.draw do
   devise_for :users
+
+  namespace :admin do
+    resources :reviews, only: %i[index update destroy]
+    resources :rooms
+  end
+
   root 'home#index'
 
   namespace :api do
@@ -10,9 +16,9 @@ Rails.application.routes.draw do
   end
 
   resources :rooms do
-    resources :reservations, controller: "rooms/reservations"
+    resources :reservations, controller: 'rooms/reservations'
   end
 
-  resources :reviews
+  resources :reviews, only: %i[index create]
 
 end

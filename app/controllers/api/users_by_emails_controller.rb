@@ -1,4 +1,4 @@
-#frozen_string_literal: true
+# frozen_string_literal: true
 
 module Api
   class UsersByEmailsController < ApplicationController
@@ -10,7 +10,6 @@ module Api
           render json: user.to_json, status: :ok
         end
       end
-
     rescue ActiveRecord::RecordNotFound => e
       respond_to do |format|
         format.json do
