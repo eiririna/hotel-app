@@ -13,6 +13,7 @@ module HotelApp
     config.load_defaults 7.0
     config.assets.enabled = true
     config.autoloader = :classic
+    config.assets.initialize_on_precompile = false
     config.active_job.queue_adapter = Rails.env.development? ? :sidekiq : :async
     # Configuration for the application, engines, and railties goes here.
     #
