@@ -20,7 +20,7 @@ module Admin
       authorize @admin_room
       if @admin_room.save
         @admin_room.images.attach(admin_room_params[:images])
-        flash[:notice] = "The room was created"
+        flash[:notice] = 'The room was created'
         redirect_to new_admin_room_path(@admin_room)
       else
         render :new, status: :unprocessable_entity
@@ -29,10 +29,10 @@ module Admin
 
     def update
       if @admin_room.update(admin_room_params)
-        flash[:notice] = "The room was updated"
+        flash[:notice] = 'The room was updated'
         redirect_to edit_admin_room_path(@admin_room)
       else
-        flash[:notice] = "The room was not updated"
+        flash[:notice] = 'The room was not updated'
         render :edit, status: :unprocessable_entity
       end
     end

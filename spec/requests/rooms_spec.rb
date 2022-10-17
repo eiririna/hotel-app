@@ -5,7 +5,7 @@ RSpec.describe 'Rooms', type: :request do
     {
       name: 'president',
       description: 'simple room',
-      price: 777,
+      price: 777
     }
   end
   describe 'GET show' do

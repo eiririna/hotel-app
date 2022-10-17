@@ -26,5 +26,4 @@ Rails.application.routes.draw do
   end
 
   resources :reviews, only: %i[index create]
-
 end
